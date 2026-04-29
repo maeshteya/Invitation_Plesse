@@ -367,12 +367,23 @@
     }
 
     @media (max-width: 480px) {
+      body {
+        padding: 0;
+      }
+
       .card {
-        padding: 2.5rem 1.5rem;
+        padding: 3rem 1.25rem;
+        border-left: none;
+        border-right: none;
+        outline-offset: -8px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       .title-main {
-        font-size: 3.8rem;
+        font-size: 3.2rem;
       }
     }
   </style>
